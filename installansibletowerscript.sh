@@ -6,6 +6,7 @@
 ## To execute this script run sudo su -c'sh installAnsibleTowerScript.sh Ansibleadminpassword Databaseadminpassword'  ##
 
 echo $(date) " - Starting Script"
+sudo yum update -y --disablerepo='*' --enablerepo='*microsoft*'
 
 yum -y update --exclude=WALinuxAgent
 yum clean all
